@@ -27,8 +27,8 @@ class Magazine:
         if not isinstance(value, str):
             raise ValueError("Name must be a string")
         # Check if the length of the name is between 2 and 16 characters
-        if not (2 <= len(value) <= 16):
-            raise ValueError("Name must be between 2 and 16 characters")
+        if not (1 <= len(value) <= 20):  # Changed to 1-20 characters
+          raise ValueError("Name must be between 1 and 20 characters")
         # Set the name attribute
         self._name = value
 
